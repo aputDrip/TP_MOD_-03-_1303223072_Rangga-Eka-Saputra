@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+        iframe {
+            border-radius: 8px;
+            overflow: hidden;
+            border: none;
+        }
+        .intro-text {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #495057;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ced4da;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #adb5bd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Profil Pribadi</h1>
+
+    <div class="profile-section">
+        <img src="Aput.jpg" alt="Foto Profil" class="profile-img">
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/xfM4X6inBUk" title="Video Profil" allowfullscreen></iframe>
+    </div>
+
+    <div class="intro-text">
+        <h2>Tentang Saya</h2>
+        <p>Salam! Saya Rangga Eka Saputra, seorang mahasiswa dari Pekanbaru yang sedang mengejar gelar di Telkom University dalam bidang Teknologi Informasi. Dengan ketertarikan mendalam pada teknologi dan pemrograman, saya berkomitmen untuk terus mengasah keterampilan saya di bidang ini.</p>
+    </div>
+
+    <div class="skills">
+        <h2>Keterampilan</h2>
+        <table>
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>Go</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Pemula</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-section">
+        <h2>Hubungi Saya</h2>
+        <form action="submit.html" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <div class="social-links">
+        <h2>Media Sosial</h2>
+        <a href="https://github.com/aputDrip" target="_blank">GitHub</a> |
+        <a href="https://www.instagram.com/ranggakasptr_?igsh=cGQybTh3YWJnZHZ6&utm_source=qr" target="_blank">Instagram</a>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!--
+Tag <html>: Menandai awal dan akhir dari dokumen HTML. Semua elemen HTML harus berada di dalam tag ini.
+Tag <head>: Berisi informasi meta tentang dokumen, seperti judul halaman (<title>), link ke stylesheet, dan skrip.
+Tag <body>: Berisi konten utama yang akan ditampilkan di browser, seperti teks, gambar, dan video.
+Tag <h1> hingga <h6>: Digunakan untuk membuat heading atau judul dengan tingkat kepentingan yang berbeda, dari yang paling penting (<h1>) hingga yang kurang penting (<h6>).
+Tag <p>: Digunakan untuk membuat paragraf teks.
+Tag <a>: Membuat hyperlink yang memungkinkan pengguna untuk berpindah ke halaman lain atau bagian lain dari halaman yang sama.
+Tag <img>: Menyisipkan gambar ke dalam halaman web.
+Tag <div>: Membuat divisi atau bagian dalam dokumen, sering digunakan untuk mengelompokkan elemen-elemen lain dan memudahkan pengaturan layout dengan CSS.
+-->
